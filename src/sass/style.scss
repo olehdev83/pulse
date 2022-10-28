@@ -1,0 +1,15 @@
+@import 'base/var/var';
+
+*{
+	font-family: 'MuseoSansCyrl'sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	max-width: 820px;
+	margin: 0 auto;
+}
+@import 'blocks/promo/promo';
+@import 'blocks/header/header';
+@import 'blocks/button/button';

@@ -1,0 +1,16 @@
+.button{
+    width: 153px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    background: $main-color;
+
+    color: #FFFF;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.7s all;
+    &:hover{
+        background: $hover-color;
+    }
+}
