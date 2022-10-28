@@ -9,7 +9,15 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    margin-top: 5px;
     transition: 0.7s all;
+    &_main{
+        width: 303px;
+        height: 54px;
+        font-size: 16px;
+        background: $main-color;
+        margin-top: 73px;
+    }
     &:hover{
         background: $hover-color;
     }
