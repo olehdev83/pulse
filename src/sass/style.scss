@@ -1,19 +1,11 @@
 @import 'base/var/var';
 
-*{
-	font-family: 'MuseoSansCyrl'sans-serif;
-}
-a{
-	text-decoration: none;
-}
-h1, h2, h3, h4, h5{
-	margin: 0;
-	padding: 0;
-}
-.container{
-	max-width: 950px;
-	margin: 0 auto;
-}
+
+@import'blocks/main/main';
+
+@import'media/media';
+
+
 @import 'blocks/promo/promo';
 @import 'blocks/header/header';
 @import 'blocks/button/button';
