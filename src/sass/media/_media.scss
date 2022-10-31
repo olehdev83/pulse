@@ -1,0 +1,136 @@
+
+/* Устройства с большим экраном (компьютеры, 1200px и выше. Стили для lg-устройств) */
+@media(max-width:1200px){
+	.container{
+		max-width: 1140px;
+	}
+}
+/* End Устройства с большим экраном (компьютеры, 1200px и выше. Стили для lg-устройств) */
+
+/* Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше. Стили для md-устройств) */	
+@media(max-width:991px){
+	.container{
+		max-width: 960px;
+		.promo{
+			&__wrapper{
+				align-items: center;
+				margin-top: 70px;
+			}
+			&__header{
+				font-size: 31px;
+			}
+			&__subheadr{
+				font-size: 21px;
+				margin-top: 16px;
+			}
+		}
+		.button{
+			&_main{
+				width: 220px;
+				font-size: 14px;
+				margin-top: 50px;
+			}
+		}
+		.advantage{
+			&__wrapper{
+				justify-content: space-around;
+    			margin-top: 50px;
+			}
+			&__item{
+				max-width: 206px;
+			}
+			&__header{
+				font-size: 25px;
+			}
+		}
+	}
+}
+/* End Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше. Стили для md-устройств) */		
+
+/* Мобильные устройства */
+@media(max-width:767px){
+	.container{
+		max-width: 720px;
+		.header{
+			&__official{
+				display: none;
+			}
+		}
+	}
+}
+/* End Мобильные устройства */
+
+/* Малые мобильные устройства */
+@media (max-width:575px){
+	.promo{
+		padding: 24px 0 50px 0;
+	}
+	.advantage{
+		padding: 60px 0 50px 0;
+	}
+
+	.container{
+		max-width: 540px;
+		.header{
+			flex-direction: column;
+			&__phone{
+				margin: 15px 0;
+			}
+		}
+		.promo{
+			&__wrapper{
+				margin-top: 50px;
+			}
+			&__header{
+				font-size: 21px;
+    			text-align: center;
+			}
+			&__subheader{
+				font-size: 13px;
+				text-align: center;
+				margin-top: 15px;
+			}
+			&__icons{
+				width: 200px;
+				flex-direction: column;
+				margin-top: 30px;
+			}
+			&__icon{
+				font-size: 13px;
+				margin-bottom: 15px;
+				img{
+					margin-bottom: 15px;
+				}
+			}
+		}
+		.button{
+			&_main{
+				margin-top: 20px;
+			}
+		}
+		.advantage{
+			&__header{
+				font-size: 21px;
+			}
+			&__title{
+				font-size: 13px;
+			}
+			&__desc{
+				font-size: 13px;
+			}
+			&__wrapper{
+				flex-direction: column;
+				align-items: center;
+				margin-top: 25px;
+			}
+			&__item{
+    			max-width: 267px;
+			}
+			&__desc{
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+}
+/* End Малые мобильные устройства */
