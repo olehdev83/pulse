@@ -18,6 +18,10 @@
         background: $main-color;
         margin-top: 73px;
     }
+    &_sumbit{
+        width: 100%;
+        height: 58px;
+    }
     &:hover{
         background: $hover-color;
     }

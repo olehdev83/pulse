@@ -9,6 +9,9 @@
 
 /* Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше. Стили для md-устройств) */	
 @media(max-width:991px){
+	.title{
+		font-size: 21px;
+	}
 	.container{
 		max-width: 960px;
 		.promo{
@@ -62,6 +65,9 @@
 
 /* Малые мобильные устройства */
 @media (max-width:575px){
+	.title{
+		font-size: 21px;
+	}	
 	.promo{
 		padding: 24px 0 50px 0;
 	}
@@ -109,9 +115,6 @@
 			}
 		}
 		.advantage{
-			&__header{
-				font-size: 21px;
-			}
 			&__title{
 				font-size: 13px;
 			}
