@@ -9,6 +9,14 @@
 
 /* Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше. Стили для md-устройств) */	
 @media(max-width:991px){
+	.carousel{
+		min-height: 480px;
+    	padding: 70px 0;
+	}
+	.consultation{
+		min-height: 590px;
+		padding: 50px 0 80px 0;
+	}
 	.title{
 		font-size: 21px;
 	}
@@ -37,7 +45,7 @@
 		.advantage{
 			&__wrapper{
 				justify-content: space-around;
-    			margin-top: 50px;
+				margin-top: 50px;
 			}
 			&__item{
 				max-width: 206px;
@@ -47,6 +55,35 @@
 			}
 		}
 	}
+		.consultation{
+			.title{
+				max-width: 519px;
+				font-size: 18px;
+				&_left{
+					text-align: center;
+					line-height: 30px;
+					margin: 0 auto;
+				}
+			}
+			&__desc{
+				font-size: 18px;
+    			text-align: center;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+		}
+		.consul-form{
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		.carousel{
+			&__inner{
+				width: 384px;
+			}
+			.slick-slide img{
+				width: 80%;
+			}
+		}
 }
 /* End Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше. Стили для md-устройств) */		
 
@@ -74,7 +111,13 @@
 	.advantage{
 		padding: 60px 0 50px 0;
 	}
-
+	.consultation{
+		min-height: 600px
+	}
+	.carousel{
+		min-height: 300px;
+    	padding: 50px 0;
+	}
 	.container{
 		max-width: 540px;
 		.header{
@@ -83,13 +126,16 @@
 				margin: 15px 0;
 			}
 		}
+		.title{
+			font-size: 20px;
+		}
 		.promo{
 			&__wrapper{
 				margin-top: 50px;
 			}
 			&__header{
 				font-size: 21px;
-    			text-align: center;
+				text-align: center;
 			}
 			&__subheader{
 				font-size: 13px;
@@ -127,13 +173,25 @@
 				margin-top: 25px;
 			}
 			&__item{
-    			max-width: 267px;
+				max-width: 267px;
 			}
 			&__desc{
 				margin-bottom: 25px;
 			}
 		}
+		.consultation{
+			&__desc{
+				font-size: 19px;
+			}
+		}
+		.consul-form{
+			width: 280px;
+		}
+		.carousel{
+			&__inner{
+				width: 230px;
+			} 
+		}
 	}
-
 }
 /* End Малые мобильные устройства */

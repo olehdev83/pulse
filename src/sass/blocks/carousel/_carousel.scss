@@ -1,0 +1,59 @@
+.carousel{
+	min-height: 527px;
+	background: #FFFF;
+	padding: 108px 0;
+	&__inner{
+		position: relative;
+		width: 750px;
+		margin: 0 auto;
+	}
+	.slick-arrow{
+		position: absolute;
+		top: 50%;
+		z-index: 4;
+
+		background: #FFFF;
+		width: 30px;
+		height: 50px;
+		font-size: 0;
+		border: none;
+	}
+	.slick-arrow.slick-disabled{
+		opacity: 0.2;
+	}
+	.slick-next{
+		left: 105%;
+		background: url('../img/icons/slaid/slaid_arrow.png') center center / cover no-repeat;
+		transform: rotate(180deg);
+	}
+	.slick-prev{
+		right: 105%;
+		background: url('../img/icons/slaid/slaid_arrow.png') center center / cover no-repeat;	
+	}
+	.slick-dots{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 30px;
+	}
+	.slick-dots li{
+		list-style: none;
+	}
+	.slick-dots li button{
+		background: #FFFF;
+		width: 15px;
+		height: 15px;
+
+		font-size: 0;
+		border: 2px solid #c70302;
+		border-radius: 50%;
+		
+		&:nth-child(1){
+			margin-right: 19px;
+		}
+	}
+	.slick-dots li.slick-active button{
+		background: #c70302;
+	}
+}
+
