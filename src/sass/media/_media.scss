@@ -42,6 +42,9 @@
 				margin-top: 50px;
 			}
 		}
+
+
+
 		.advantage{
 			&__wrapper{
 				justify-content: space-around;
@@ -54,7 +57,10 @@
 				font-size: 25px;
 			}
 		}
-	}
+
+
+
+
 		.consultation{
 			.title{
 				max-width: 519px;
@@ -85,6 +91,15 @@
 				margin: 0 auto;
 			}
 		}
+
+
+
+		.catalog{
+			&__content{
+				justify-content: center;
+			}
+		}
+	}
 }
 /* End Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше. Стили для md-устройств) */		
 
@@ -97,6 +112,19 @@
 				display: none;
 			}
 		}
+
+
+
+
+		.catalog{
+			&__tab{
+				width: 178px;
+				font-size: 13px;
+			}
+			&__content{
+				margin-top: 40px;
+			}
+		}
 	}
 }
 /* End Мобильные устройства */
@@ -105,6 +133,9 @@
 @media (max-width:575px){
 	.title{
 		font-size: 21px;
+		&_left{
+			line-height: 45px;
+		}
 	}	
 	.promo{
 		padding: 24px 0 50px 0;
@@ -129,6 +160,7 @@
 		}
 		.title{
 			font-size: 20px;
+			text-align: center;
 		}
 		.promo{
 			&__wrapper{
@@ -191,7 +223,52 @@
 		.carousel{
 			&__inner{
 				width: 230px;
-			} 
+			}	
+		}
+		.slick-slide img{
+			width: 100%;
+			margin: 0 auto;
+		}
+
+
+
+
+		.catalog{
+			&__tabs{
+				flex-wrap: wrap;
+			}
+			&__tab{
+				margin-bottom: 20px;
+			}
+			&__content{
+				margin-top: 10px;
+			}
+			&-item{
+				&__img{
+					width: 50%;
+					height: 150px;
+				}
+				&__desc{
+					font-size: 13px;
+				}
+				&__link{
+					margin-top: 20px;
+				}
+				&__list{
+					margin-left: 10px;
+					li{
+						margin-bottom: 20px;
+					}
+				}
+				&__back{
+					padding: 6px 100px;
+				}
+				.button{
+					&_mini{
+						width: 120px;
+					}
+				}
+			}
 		}
 	}
 }

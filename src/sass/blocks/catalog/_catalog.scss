@@ -1,4 +1,5 @@
 .catalog{
+	min-height: 932px;
 	padding-bottom: 78px;
 	&__tabs{
 		margin-top: 46px;
@@ -83,6 +84,7 @@
 			text-align: center;
 			text-decoration: underline;
 			text-transform: uppercase;
+			padding: 20px;
 			margin-top: 10px;
 			&:hover{
 				color: $main-color;
@@ -170,13 +172,10 @@
 			font-weight: 500;
 			text-decoration: underline;
 			text-transform: uppercase;
+			padding: 20px 100px;
 			&:hover{
 				color: $main-color;
 			}
-		}
-		&:hover{
-			box-shadow: 2px 2px 20px $main-color;
-			border: none;
 		}
 	}
 }
