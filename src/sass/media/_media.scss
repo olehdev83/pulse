@@ -11,7 +11,7 @@
 @media(max-width:991px){
 	.carousel{
 		min-height: 480px;
-    	padding: 70px 0;
+		padding: 70px 0;
 	}
 	.consultation{
 		min-height: 590px;
@@ -73,7 +73,7 @@
 			}
 			&__desc{
 				font-size: 18px;
-    			text-align: center;
+				text-align: center;
 				margin: 0 auto;
 				margin-top: 20px;
 			}
@@ -125,6 +125,24 @@
 				margin-top: 40px;
 			}
 		}
+
+
+
+		.reviews{
+			&__item{
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+			&__info{
+				margin: 0;
+				margin-top: 50px;
+				text-align: center;
+			}
+			&__message{
+				max-width: 262px;
+				font-size: 14px;
+			}
+		}
 	}
 }
 /* End Мобильные устройства */
@@ -148,7 +166,7 @@
 	}
 	.carousel{
 		min-height: 300px;
-    	padding: 50px 0;
+		padding: 50px 0;
 	}
 	.container{
 		max-width: 540px;
@@ -225,8 +243,8 @@
 				width: 230px;
 			}	
 		}
-		.slick-slide img{
-			width: 100%;
+		.slick-slider img{
+			width: 80%;
 			margin: 0 auto;
 		}
 
@@ -244,6 +262,7 @@
 				margin-top: 10px;
 			}
 			&-item{
+				margin: 0px;
 				&__img{
 					width: 50%;
 					height: 150px;
