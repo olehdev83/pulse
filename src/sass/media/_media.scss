@@ -290,5 +290,21 @@
 			}
 		}
 	}
+	.footer{
+		&__info{
+			height: 230px;
+		}
+		&__address, &__phone{
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+		&__social{
+			&-item{
+				width: 40px;
+    			height: 40px;
+				font-size: 20px;
+			}
+		}
+	}
 }
 /* End Малые мобильные устройства */
