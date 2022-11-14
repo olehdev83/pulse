@@ -34,6 +34,28 @@ $(document).ready(function(){
 
 	  });
 
+
+	   //Modal windows
+
+	   	$('[data-modal=modal-consultation]').on('click', function(){
+		$('.overlay, #modal-consultation').fadeIn('show');
+	 });
+
+	 // Close
+
+		$('.modal__close').on('click', function(){
+		$('.overlay, #modal-consultation, #modal-order, #modal-thanks').fadeOut('show');
+	});
+
+   
+	//Title update order
+
+	$('.button_mini').each(function(i){
+	   $(this).on('click', function(){
+		   $('#modal-order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
+		   $('.overlay, #modal-order').fadeIn('show');
+		})
+	   
 	  
 	  function toggleTabSlide(nameClass){
 		$(nameClass).each(function(i){
@@ -48,33 +70,38 @@ $(document).ready(function(){
 	  toggleTabSlide('.catalog-item__link');
 	  toggleTabSlide('.catalog-item__back');
 
-
-
-	  //Modal windows
-
-	  $('[data-modal=modal-consultation]').on('click', function(){
-		 $('.overlay, #modal-consultation').fadeIn('show');
-	  });
-
-	  // Close
-
-	  $('.modal__close').on('click', function(){
-		$('.overlay, #modal-consultation, #modal-order, #modal-thanks').fadeOut('show');
-	 });
-
-	
-	 //title update order
-
-	 $('.button_mini').each(function(i){
-		$(this).on('click', function(){
-			$('#modal-order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
-			$('.overlay, #modal-order').fadeIn('show');
-	 	})
-
 	});
 
+	// Validate form
+
+	function validateForms(form){
+		$(form).validate({
+		rules: {
+			name: "required",
+			phone: {
+				required: true,
+				minlength: 12,
+				email: {
+					required: true,
+					email: true,
+				}
+			},
+		},	
+		messages: {
+			name: "Пожалуйста, введите свое имя",
+			phone:{
+				required: "Пожалуста, введите свой номер телефона",
+				minlength: jQuery.validator.format("Введите {0} числовой номер телефона")
+			},
+			email: {
+				required: "Пожалуста, введите свой email",
+				email: "Неправильно введен email",
+			},
+		}
+		});
+	}
+
+	validateForms('#consul-form');
+	validateForms('#modal-consultation form');
+	validateForms('#modal-order form');
 });
-
-
-
-
