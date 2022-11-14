@@ -76,32 +76,34 @@ $(document).ready(function(){
 
 	function validateForms(form){
 		$(form).validate({
-		rules: {
-			name: "required",
-			phone: {
-				required: true,
-				minlength: 12,
+			rules: {
+				name: "required",
+				phone:  "required",
+				
 				email: {
 					required: true,
 					email: true,
 				}
-			},
+			
 		},	
-		messages: {
-			name: "Пожалуйста, введите свое имя",
-			phone:{
-				required: "Пожалуста, введите свой номер телефона",
-				minlength: jQuery.validator.format("Введите {0} - ти числовой номер телефона")
-			},
-			email: {
-				required: "Пожалуста, введите свой email",
-				email: "Неправильно введен email",
-			},
-		}
+			messages: {
+				name:  "Пожалуйста, введите свое имя",
+				phone: "Пожалуста, введите свой номер телефона",
+				 
+				email: {
+					required: "Пожалуста, введите свой email",
+					email: "Неправильно введен email",
+				},
+			}
 		});
 	}
 
 	validateForms('#consul-form');
 	validateForms('#modal-consultation form');
 	validateForms('#modal-order form');
+
+	// Mask phone number
+
+	$('input[name=phone]').mask("+7 (999)-999-99-99");
+
 });
