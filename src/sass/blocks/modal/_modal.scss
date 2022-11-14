@@ -41,11 +41,11 @@
 	}
 	.error{
 		color: $error-color;
-		text-align: center;
-		padding-bottom: 15px;
 	}
 	label.error{
 		border: none;
+		text-align: center;
+		padding-bottom: 15px;
 	}
 }
 

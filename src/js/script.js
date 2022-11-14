@@ -91,7 +91,7 @@ $(document).ready(function(){
 			name: "Пожалуйста, введите свое имя",
 			phone:{
 				required: "Пожалуста, введите свой номер телефона",
-				minlength: jQuery.validator.format("Введите {0} числовой номер телефона")
+				minlength: jQuery.validator.format("Введите {0} - ти числовой номер телефона")
 			},
 			email: {
 				required: "Пожалуста, введите свой email",

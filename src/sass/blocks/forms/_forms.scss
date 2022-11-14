@@ -22,4 +22,13 @@
 	&_mt-25{
 		margin-top: 25px;
 	}
+	.error{
+		color: $white-color;
+		
+	}
+	label.error{
+		border: none;
+		text-align: center;
+		padding-bottom: 15px;
+	}
 }
