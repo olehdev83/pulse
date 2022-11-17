@@ -106,4 +106,33 @@ $(document).ready(function(){
 
 	$('input[name=phone]').mask("+7 (999)-999-99-99");
 
+
+
+	// Miler email post
+
+	$('form').submit(function(e){
+		e.preventDefault();
+
+
+			if(!$(this).valid()){
+				return;
+			}
+
+
+		$.ajax({
+				type: "GET",
+				url: "js/mailer/smart.php",
+				data: $(this).serialize()
+		}).done(function(){
+				$(this).find("input").val("");
+
+				$('#modal-consultation, #modal-order').fadeOut();
+				$('.overlay, #modal-thanks').fadeIn('slow')
+
+
+				$('form').trigger('reset')
+		});
+
+	});
+	
 });
