@@ -135,4 +135,28 @@ $(document).ready(function(){
 
 	});
 	
+	// Smooth scroll for all links page
+
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 1600){
+			$('.pageup').fadeIn();
+		}
+		else{
+		
+			$('.pageup').fadeOut();
+		}
+	});
+
+	$('a[href^="#"').on('click', function() {
+
+		let href = $(this).attr('href');
+	
+		$('html, body').animate({
+			scrollTop: $(href).offset().top+"px"
+		});
+		return false;
+	});
+	// End Smooth scroll for all links page
+		
+
 });

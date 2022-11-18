@@ -3,6 +3,51 @@
 @media(max-width:1200px){
 	.container{
 		max-width: 1140px;
+		.promo{
+			&__header, &__subheader{
+				margin: 0 auto;
+			}
+			&__icons{
+				margin: 60px auto;
+			}
+			&__link{
+				margin: 12px auto;
+			}
+		}
+		button{
+			margin: 0 auto;
+		}
+	}
+	.consultation{
+		.title{
+			margin: 0 auto;
+    		text-align: center;
+		}
+		&__desc{
+			margin: 0 auto;
+			margin-top: 8px;
+		}
+		.consul-form{
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+	}
+	.catalog{
+		&__content{
+			justify-content: center;
+		}
+	}
+	.reviews{
+		&__item{
+			flex-direction: column;
+    		align-items: center;
+			margin-top: 40px;
+		}
+		&__info{
+			text-align: center;
+			margin: 0;
+			margin-top: 30px;
+		}
 	}
 }
 /* End Устройства с большим экраном (компьютеры, 1200px и выше. Стили для lg-устройств) */
@@ -100,6 +145,18 @@
 			}
 		}
 	}
+
+	.footer{
+		&__address{
+			margin-bottom: 30px;
+		}
+		&__info{
+			padding: 41px 52px 56px 52px;
+		}
+		&__phone{
+			margin-bottom: 16px;
+		}
+	}
 }
 /* End Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше. Стили для md-устройств) */		
 
@@ -117,6 +174,10 @@
 
 
 		.catalog{
+			&__info{
+				padding: 40px 52px 56px 52px;
+			}
+
 			&__tab{
 				width: 178px;
 				font-size: 13px;
@@ -167,6 +228,9 @@
 	.carousel{
 		min-height: 300px;
 		padding: 50px 0;
+	}
+	.catalog{
+		padding-bottom: 60px;
 	}
 	.container{
 		max-width: 540px;
@@ -262,7 +326,7 @@
 				margin-top: 10px;
 			}
 			&-item{
-				margin: 0px;
+				margin-top: 15px;
 				&__img{
 					width: 50%;
 					height: 150px;

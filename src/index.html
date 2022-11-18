@@ -15,7 +15,7 @@
 </head>
 <body>
 
-	<section class="promo" id="promo">
+	<section id="up" class="promo" >
 		<div class="container">
 			<header class="header">
 
@@ -57,7 +57,7 @@
 
 					<div class="promo__link">
 						или
-						<a href="#">перейти в каталог</a>
+						<a href="#catalog">перейти в каталог</a>
 					</div>
 	
 			</div>
@@ -109,7 +109,7 @@
 				<input name="phone"  placeholder="Ваш телефон">
 				<input name="email"  placeholder="Ваш E-mail" 	type="email">
 
-				<button type="sumbit" class="button button_sumbit">заказать консультацию</button>
+				<button class="button button_sumbit">заказать консультацию</button>
 			</form>
 		</div>
 	</section>
@@ -124,7 +124,7 @@
 		</div>
 	</section>
 
-	<section class="catalog">
+	<section id="catalog" class="catalog">
 		<div class="container">
 
 			<h2 class="title">Каталог пульсометров</h2>
@@ -532,9 +532,9 @@
 			<address class="footer__address">Москва, Мясницкий проезд, д.3с1</address>
 			<a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
 			<div class="footer__social">
-				<a href="" class="footer__social-item"><i class="fa-brands fa-facebook-f"></i></a>
-				<a href="" class="footer__social-item"><i class="fa-brands fa-instagram"></i></a>
-				<a href="" class="footer__social-item"><i class="fa-brands fa-pinterest-p"></i></a>
+				<a href="https://fb.com/" 			 target="_blank" class="footer__social-item"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://instagram.com/" 	 target="_blank" class="footer__social-item"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.pinterest.com/" target="_blank" class="footer__social-item"><i class="fa-brands fa-pinterest-p"></i></a>
 			</div>
 		</div>
 	</footer>
@@ -579,11 +579,15 @@
 	</div>
 
 
+	<a href="#up" class="pageup">
+		<i class="fa-solid fa-circle-chevron-up"></i>
+	</a>
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
 	<script src="js//slick/slick.min.js"></script>
+	<script src="js/jqueryValidate/jquery.validate.min.js"></script>
 	<script src="js/jqueryMaskInput/jqueryMaskInput.js"></script>
 
 	
