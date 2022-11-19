@@ -32,5 +32,26 @@
 			text-decoration: underline;
 		}
 	}
+	&__icon{
+		&_animated-heart{
+				animation-name: heartbeat;
+				animation-duration: 2s;
+				animation-timing-function:linear;
+				animation-iteration-count: infinite;
+		}
+		&_animated-shoe{
+			animation-name: shoe;
+			animation-duration: 2s;
+			animation-timing-function:linear;
+			animation-iteration-count: infinite;
+
+		}
+		&_animated-cup{
+			animation-name: cup;
+			animation-duration: 2s;
+			animation-timing-function:linear;
+			animation-iteration-count: infinite;
+		}
+	}
 
 }

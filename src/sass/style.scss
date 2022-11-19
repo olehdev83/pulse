@@ -1,4 +1,6 @@
 @import 'base/var/var';
+@import 'base/animations/animations';
+
 @import'blocks/main/main';
 @import 'blocks/promo/promo';
 @import 'blocks/header/header';
@@ -14,7 +16,5 @@
 
 @import 'blocks/modal/modal';
 @import 'blocks/pageup/pageup';
-
-
 
 @import'media/media';
